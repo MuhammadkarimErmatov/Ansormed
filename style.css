@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url('./devor.jpg');
+    background-position:center ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 5px solid rgb(105, 39,39);
+    width: 450px;
+    height: 450px;
+    display: flex;
+    background-image: url('./uy.jpg');
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+}
+.demo {
+    transition: transform 1s;
+    border: 8px ridge rgb(173, 0, 0);
+    background-color: rgba(52, 243, 243, 0.3);
+    width: 100%;
+}
+.parent .left{
+    transform-origin: center left;
+}
+.parent .right{
+    transform-origin:right center ;
+    transition-delay: 0.5s;
+}
+.parent:hover .right {
+    transform: perspective(2000px) rotateY(145deg);
+}
+.parent:hover .left {
+    transform: perspective(2000px) rotateY(-145deg);
+}

@@ -1,48 +1,168 @@
 *{
     box-sizing: border-box;
-}
-html{
-    height: 100%;
-}
-body{
-    background-image: url('./devor.jpg');
-    background-position:center ;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
-.parent{
-    border: 5px solid rgb(105, 39,39);
-    width: 450px;
-    height: 450px;
-    display: flex;
-    background-image: url('./uy.jpg');
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
+body{
+    font-family: 'Roboto',sans-serif;
 }
-.demo {
-    transition: transform 1s;
-    border: 8px ridge rgb(173, 0, 0);
-    background-color: rgba(52, 243, 243, 0.3);
+.container{
+    padding-left:30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    max-width: 1260px;
     width: 100%;
 }
-.parent .left{
-    transform-origin: center left;
+.button{
+    background-color: #ea625c;
+    border: 1px solid #ea625c;
+    color: #fff;
+    padding: 12px 39px;
+    text-transform: uppercase;
 }
-.parent .right{
-    transform-origin:right center ;
-    transition-delay: 0.5s;
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 79px;
+    padding-top: 30px;
+
 }
-.parent:hover .right {
-    transform: perspective(2000px) rotateY(145deg);
+.site-nav{
+    display: flex;
+    align-items: center;
 }
-.parent:hover .left {
-    transform: perspective(2000px) rotateY(-145deg);
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.nav-link{
+    color: #333333;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 22px;
+}
+.nav-link:hover{
+    color: red;
+    border-bottom: 2px solid blue;
+}
+.button:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: #ea625c;
+}
+.nav-link:active{
+  opacity: 0.6;
+  color: #ea625c;
+}
+.nav-input{
+    border: 0;
+    border-bottom: 1px solid #333333;
+    color: #666666;
+    padding-bottom: 6px;
+    font-size: 15px;
+    line-height: 22px;
+    outline: none;
+    width: 152px;
+}
+.hero-img{
+    object-fit: contain;
+    transform: translateX(300px);
+}
+.hero-section{
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-content{
+    max-width:490px;
+    width: 100%;
+}
+.hero-cap{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.hero-text{
+    border-left: 3px solid #888888;
+    color:#777777;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0 94px 0;
+}
+.feature{
+    max-width: 280px;
+    width: 100%;
+}
+.feature-cap{
+    color: #222222;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.feature-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height:160%;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.box-container{
+    display: flex;
+}
+.box{
+    background-color: #ddd;
+    width: 8px;
+    height: 8px;
+}
+.box-2{
+    margin:0 10px;
+}
+.learn-more{
+    display: flex;
+    align-items: center;
+}
+.learn-more > div {
+    background-color: #ea625c;
+    width: 40px;
+    height: 3px;
+    margin-right: 10px;
+}
+.learn-more > h1 {
+    
+    color: #EA625C;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+.bottom-img{
+    transform: translateX(0);
+}
+.intro{
+margin-bottom: 70px;
+}
+.site-footer{
+    background-image: url('./runners\ 1@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+.site-footer p {
+color: #fff;
+}
+.site-footer div{
+    transform: translate(630px, 190px);
 }
